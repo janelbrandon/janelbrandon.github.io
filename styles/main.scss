@@ -1,0 +1,39 @@
+header  {
+  max-width: 350px;
+  img {
+    border-radius: 50%;
+  }   
+  text-align: center;
+  padding: 50px 0;
+}
+
+@mixin center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 20px 0;
+}
+
+body {
+    @include center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    background-color: rgb(195, 247, 244);
+}
+
+.content {
+  @include center;
+  width: 800px;;
+  background-color: rgb(158, 236, 250);
+}
+
+footer {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
